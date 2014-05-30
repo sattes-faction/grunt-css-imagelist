@@ -1,0 +1,7 @@
+.colors {
+  background: url("../images/colors.png");
+}
+
+.music {
+  background: url("../images/music.png");
+}

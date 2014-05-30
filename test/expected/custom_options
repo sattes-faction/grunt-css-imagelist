@@ -1,0 +1,12 @@
+[class^="icon-"] {
+  width: 20px;
+  height: 20px;
+}
+
+.icon-colors {
+  background: url("../images/icons/colors.png");
+}
+
+.icon-music {
+  background: url("../images/icons/music.png");
+}

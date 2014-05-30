@@ -9,11 +9,9 @@
 'use strict';
 
 var path = require("path");
+var chalk = require('chalk');
 
 module.exports = function(grunt) {
-
-  // Please see the Grunt documentation for more information regarding task
-  // creation: http://gruntjs.com/creating-tasks
 
   grunt.registerMultiTask('css_imagelist', 'A Grunt plugin for autogenerating css definitions for images in a folder', function() {
     // Merge task-specific and/or target-specific options with these defaults.
@@ -40,12 +38,7 @@ module.exports = function(grunt) {
         var filename = path.basename(filepath, extname);
         var cssDefinition = "." + options.prefix + filename +" {\n  background-image: url(\"" + options.images_path + path.basename(filepath) + "\");\n}";
         return cssDefinition;
-        // Read file source.
-        //return grunt.file.read(filepath);
       }).join(grunt.util.normalizelf("\n\n"));
-
-      // Handle options.
-      //css += options.punctuation;
 
       // Write the destination file.
       grunt.file.write(f.dest, css);
@@ -54,5 +47,4 @@ module.exports = function(grunt) {
       grunt.log.writeln('File "' + chalk.cyan(f.dest) + '" created.');
     });
   });
-
 };

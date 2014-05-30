@@ -38,7 +38,7 @@ module.exports = function(grunt) {
       }).map(function(filepath) {
         var extname = path.extname(filepath);
         var filename = path.basename(filepath, extname);
-        var cssDefinition = "." + options.prefix + filename +" {\n  background: url(\"" + options.images_path + path.basename(filepath) + "\");\n}";
+        var cssDefinition = "." + options.prefix + filename +" {\n  background-image: url(\"" + options.images_path + path.basename(filepath) + "\");\n}";
         return cssDefinition;
         // Read file source.
         //return grunt.file.read(filepath);

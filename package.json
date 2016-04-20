@@ -1,7 +1,7 @@
 {
   "name": "grunt-css-imagelist",
   "description": "A Grunt plugin for autogenerating css definitions for images in a folder",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/sattes-faction/grunt-css-imagelist",
   "author": {
     "name": "Simon Sattes",

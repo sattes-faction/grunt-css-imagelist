@@ -100,4 +100,5 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
  * filter input files to select images only
 
 ## Release History
+ * 2014-05-30   v0.1.1   updated grunt peerDependency
  * 2014-05-30   v0.1.0   initial release
